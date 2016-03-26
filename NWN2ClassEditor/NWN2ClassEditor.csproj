@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1E970CA-53CC-46C9-B4C3-2A1E71D28464}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BuzzX8.NWN2ClassEditor</RootNamespace>
+    <AssemblyName>nw2class_editor_plugin</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>D:\Games\Neverwinter 2\NWN2Toolset\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Plugin|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>D:\Games\Neverwinter 2 - Mask of the Betrayer\NWN2Toolset\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetMagic2005, Version=5.0.1.0, Culture=neutral, PublicKeyToken=6bb96f3d82daa243, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Games\Neverwinter 2\DotNetMagic2005.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ManagedElectron, Version=1.0.1701.0, Culture=neutral, PublicKeyToken=6bb96f3d82daa243, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Games\Neverwinter 2\ManagedElectron.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="NWN2Toolset, Version=1.0.1765.0, Culture=neutral, PublicKeyToken=6bb96f3d82daa243, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Games\Neverwinter 2\NWN2Toolset.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OEIShared, Version=1.0.1765.0, Culture=neutral, PublicKeyToken=6bb96f3d82daa243, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Games\Neverwinter 2\OEIShared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SandBar, Version=1.3.4.1, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Games\Neverwinter 2\SandBar.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NWN2ClassEditorBanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NWN2ClassEditorBanner.Designer.cs">
+      <DependentUpon>NWN2ClassEditorBanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NWN2CharGenChooserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NWN2CharGenChooserForm.Designer.cs">
+      <DependentUpon>NWN2CharGenChooserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NWN2CharGenPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NWN2CharGenPanel.Designer.cs">
+      <DependentUpon>NWN2CharGenPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NWN2ClassEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NWN2ClassEditorForm.Designer.cs">
+      <DependentUpon>NWN2ClassEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NWN2ClassEditorPlugin.cs" />
+    <Compile Include="NWN2ResourceViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NWN2ResourceViewerForm.designer.cs">
+      <DependentUpon>NWN2ResourceViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NWN2RecourceViewerPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="NWN2ClassEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NWN2ClassEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NWN2ClassEditorBanner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NWN2ClassEditorBanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NWN2CharGenChooserForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NWN2CharGenChooserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NWN2CharGenPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NWN2CharGenPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NWN2ResourceViewerForm.resx">
+      <DependentUpon>NWN2ResourceViewerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\NWN2ClassEditorForm.bmp">
+      <CustomToolNamespace>BuzzX8.NWN2ClassEditor</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NWN2ClassEditorForm.bmp">
+      <CustomToolNamespace>BuzzX8.NWN2ClassEditor</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolsetIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TalkTable.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateFuulPack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NWN2ClassEditorControl\NWN2ClassEditorControl.csproj">
+      <Project>{220283A1-544A-4177-B314-0E3A29B97492}</Project>
+      <Name>NWN2ClassEditorControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

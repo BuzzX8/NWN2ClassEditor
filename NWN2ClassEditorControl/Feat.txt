@@ -1,0 +1,219 @@
+========================
+Feat.2da Definition
+========================
+Overview: List of all feats available in the game
+
+Modification history:
+ChazM - 5/3/07 - created
+
+
+
+ Column  Column Name	 
++-------+---------------
+| A	| *blank*
++-------+---------------
+Feat ID.  Actual number is for user clarity; the engine cares about the position of the row, not what number is in this column.
+
++-------+---------------
+| B	| Label
++-------+---------------
+Comment that typically indicates the name of the associated constant.  Actual data value makes no difference to the game engine.
+
++-------+---------------
+| C	| Feat	
++-------+---------------
+A string Ref for the name of the feat. 
+
++-------+---------------
+| D	| Description
++-------+---------------
+A string Ref for the description of the feat. 
+
++-------+---------------
+| E	| Icon	
++-------+---------------
+The .tga file used as the icon next to the feat name in the GUIs.
+
++-------+---------------
+| F-N	| Min<X>
++-------+---------------
+What must be had before the feat will appear as an option, be it ability scores, attack bonus, or spell level.  The player must meet *all* the requirements to qualify for the feat.  You must meet or exceed (>=) the number in the column to meet the prereq.
+
++-------+---------------
+| O-P	| PreReqFeat<X>
++-------+---------------
+Feats required to have before you can get this feat.  Both these prereqs feats *must* be met to qualify.
+
++-------+---------------
+| Q	| GainMultiple	
++-------+---------------
+DEPRECATED: not currently used in the NWN2 engine.  (Can you take this feat multiple times? 0 for no, 1 for yes.)
+
++-------+---------------
+| R	| EffectsStack	
++-------+---------------
+DEPRECATED: not currently used in the NWN2 engine.  (Do the effects gained from this feat stack with other bonuses? 0 for no, 1 for yes.)
+
++-------+---------------
+| S	| AllClassesCanUse	
++-------+---------------
+A 0 means this is a class specific feat, 1 means any class can select it if they meet the prerequisites.  If 0, the feat must be on a class's feat list (CLS_FEAT_*.2da) to be granted or selected.
+
++-------+---------------
+| T	| Category
++-------+---------------
+Used by GetCreatureTalentRandomFeat() for AI script functions.
+
++-------+---------------
+| U	| MaxCR	
++-------+---------------
+Used by GetCreatureTalentRandomFeat() for AI script functions.
+
++-------+---------------
+| V	| SpellID	
++-------+---------------
+If the feat is active, clicking on it will cast the spell associated with this Spell ID (from spells.2da).
+
++-------+---------------
+| W	| Successor	
++-------+---------------
+If a feat has a successor, only the successor will be displayed if you have both the feat and its successor.  The character will still be considered as having the feat, but it will not show up on the character sheet any more; hotbar icons of feats lower in the chain will automatically update themselves to be the highest level feat you have in the chain.
+
++-------+---------------
+| X	| CRValue	
++-------+---------------
+DEPRECATED: not currently used in the NWN2 engine.  (Used in creature CR calculations.)
+
++-------+---------------
+| Y	| UsesPerDay	
++-------+---------------
+How many times per day the PC can use this feat before it is exhausted for the day.
+If blank and there is no cooldown, this will be infinite uses per day
+Should not be blank if there is a cooldown.  Set to -1 for infinite uses if there is a cooldown.
+
++-------+---------------
+| Z	| USEMAPFEAT
++-------+---------------
+The feat ID that this feat uses to display the number of uses per day it has left.  Do not have a value in here if you also have a value in UsesPerDay.  However, using this feat will not automatically reduce the number of uses of the mapped feat.  To do that, you'll need to actually call DecrementRemainingFeatUses() from the spell script for this feat.  See x0_s2_divmight (the Divine Might script for the feat by the same name) for an example.
+
++-------+---------------
+| AA	| MasterFeat	
++-------+---------------
+???
+
++-------+---------------
+| AB	| TargetSelf	
++-------+---------------
+If set to 1, an active feat will automatically cast it on you without bringing up the targeting interface.
+
++-------+---------------
+| AC-AH	| OrReqFeat<X>
++-------+---------------
+If the PC has ANY of the listed Feats, they can take this one.  They must have at least one of the set, in addition to *all* the feats in the PreReqFeat columns above.
+
++-------+---------------
+| AI	| ReqSkill	
++-------+---------------
+Skill required to have in order to take the feat.
+
++-------+---------------
+| AJ	| ReqSkillMinRanks
++-------+---------------
+Ranks in the "ReqSkill" required to take the feat.
+
++-------+---------------
+| AK	| ReqSkill2
++-------+---------------
+Skill required to have in order to take the feat.
+
++-------+---------------
+| AL	| ReqSkillMinRanks2
++-------+---------------
+Ranks in the "ReqSkill2" required to take the feat.
+
++-------+---------------
+| AM	| Constant
++-------+---------------
+The constant used in nwscript.nss.  For user clarity only, not used by the engine at all.
+
++-------+---------------
+| AN	| ToolsCategory	
++-------+---------------
+The number cooresponds to the type of feat it is:
+0 = All Feats
+1 = Combat Feats
+2 = Active Combat Feats
+3 = Defensive Feats
+4 = Magical Feats
+5 = Class/Racial Feats
+6 = Other Feats
+Anything beyond 7 messes up the toolset
+
++-------+---------------
+| AO	| HostileFeat
++-------+---------------
+If used, will this provoke attacks and/or hostility from target. 1 for yes. **** for no.
+
++-------+---------------
+| AP	| MinLevel	
++-------+---------------
+The minimum class level (as set by the MinLevelClass column) you have to be to pick this feat.
+
++-------+---------------
+| AQ	| MinLevelClass	
++-------+---------------
+The class you must have a certain number of levels in (as set in the MinLevel column) to pick this feat.
+
++-------+---------------
+| AR	| MaxLevel	
++-------+---------------
+The highest (total character) level you can be and still pick this feat.
+
++-------+---------------
+| AS	| MinFortSave	
++-------+---------------
+The minimum (base) Fort save you must have to select this feat.
+
++-------+---------------
+| AT	| PreReqEpic	
++-------+---------------
+If 1, you must be 21st level or higher to pick this feat.  If 0, there is no special restriction.
+
++-------+---------------
+| AU	| FeatCategory
++-------+---------------
+Defines what category grouping the feat shows up on in feat selection and on the character sheet.  HISTORY_FT_CAT category feats are not checked by character validation.
+
++-------+---------------
+| AV	| IsActive	
++-------+---------------
+If 1, the feat is usable/clickable.  You will need to have something in SpellID column, since an active feat is "active" because it calls a spell script when you click it.  (Except for special engine-side feats, like Power Attack.)
+
++-------+---------------
+| AW	| IsPersistent	
++-------+---------------
+If 1, the feat automatically calls the spell attached to it (defined in the SpellID) whenever the character is loaded, rests, or module transitions.  See the Paladin Aura of Courage (NW_S2_CourageA.nss, NW_S2_CourageAA.nss, & NW_S2_CourageAB.nss).  The feat also needs to be active, and, preferably, self-targeting.
+
++-------+---------------
+| AX	| ToggleMode	
++-------+---------------
+Defines the toggle mode ID (like Bard Songs, Power Attack, & etc.).  It would be exceptionally difficult (I think) to get a new working toggle mode without access to engine code.
+
++-------+---------------
+| AY	| Cooldown	
++-------+---------------
+The number of seconds it takes before you can use a feat again after activating it.  Some feats have their actual cooldown values defined by the engine (like Barbarian Rage), and have their cooldown set to 1 so the engine knows it's non-zero and does cooldown processing on the feat.
+
++-------+---------------
+| AZ	| DMFeat	
++-------+---------------
+If 1, a DM character will be automatically granted the feat when (s)he enters the game.
+
++-------+---------------
+| BA	| REMOVED
++-------+---------------
+If 1, the feat is "removed" from the game and will not show up as a valid feat to be selected or granted.  If 0, the feat is in the game and recognized by the engine.
+
+
+
+	
