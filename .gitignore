@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/NWN2ClassEditor/obj
+/.vs/NWN2ClassEditor/v16
+/Dnd35.Class/obj
+/Dnd35.Class/bin/Debug/netstandard2.0
