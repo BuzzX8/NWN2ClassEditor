@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWN2ClassEditorControl", "NWN2ClassEditorControl\NWN2ClassEditorControl.csproj", "{220283A1-544A-4177-B314-0E3A29B97492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConteiner", "TestConteiner\TestConteiner.csproj", "{8E83F362-88E6-4497-8096-83C064FD26CF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWN2ClassEditor", "NWN2ClassEditor\NWN2ClassEditor.csproj", "{F1E970CA-53CC-46C9-B4C3-2A1E71D28464}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dnd35.Class", "Dnd35.Class\Dnd35.Class.csproj", "{38D354EC-CE20-486C-8961-8FA55EE60545}"
@@ -24,9 +22,6 @@ Global
 		{220283A1-544A-4177-B314-0E3A29B97492}.Plugin|Any CPU.Build.0 = Plugin|Any CPU
 		{220283A1-544A-4177-B314-0E3A29B97492}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{220283A1-544A-4177-B314-0E3A29B97492}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E83F362-88E6-4497-8096-83C064FD26CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E83F362-88E6-4497-8096-83C064FD26CF}.Plugin|Any CPU.ActiveCfg = Plugin|Any CPU
-		{8E83F362-88E6-4497-8096-83C064FD26CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1E970CA-53CC-46C9-B4C3-2A1E71D28464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1E970CA-53CC-46C9-B4C3-2A1E71D28464}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1E970CA-53CC-46C9-B4C3-2A1E71D28464}.Plugin|Any CPU.ActiveCfg = Plugin|Any CPU
