@@ -1,3 +1,7 @@
 ﻿/.vs
 /obj
 /bin
+/Dnd35.Class/obj
+/Nwn2.Class/obj
+/NWN2ClassEditor/obj/Debug
+/Dnd35.Class/bin/Debug/netstandard2.0

@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWN2ClassEditorControl", "N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NWN2ClassEditor", "NWN2ClassEditor\NWN2ClassEditor.csproj", "{F1E970CA-53CC-46C9-B4C3-2A1E71D28464}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dnd35.Class", "Dnd35.Class\Dnd35.Class.csproj", "{38D354EC-CE20-486C-8961-8FA55EE60545}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dnd35.Class", "Dnd35.Class\Dnd35.Class.csproj", "{38D354EC-CE20-486C-8961-8FA55EE60545}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nwn2.Class", "Nwn2.Class\Nwn2.Class.csproj", "{AEE72F69-746B-4084-9F9D-A886E65883FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nwn2.ClassEditor.Controls", "Nwn2.ClassEditor.Controls\Nwn2.ClassEditor.Controls.csproj", "{EC5888FD-EFD7-46E4-B9B7-C12F3DC1BEFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +38,18 @@ Global
 		{38D354EC-CE20-486C-8961-8FA55EE60545}.Plugin|Any CPU.Build.0 = Debug|Any CPU
 		{38D354EC-CE20-486C-8961-8FA55EE60545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38D354EC-CE20-486C-8961-8FA55EE60545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE72F69-746B-4084-9F9D-A886E65883FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE72F69-746B-4084-9F9D-A886E65883FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE72F69-746B-4084-9F9D-A886E65883FF}.Plugin|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE72F69-746B-4084-9F9D-A886E65883FF}.Plugin|Any CPU.Build.0 = Debug|Any CPU
+		{AEE72F69-746B-4084-9F9D-A886E65883FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE72F69-746B-4084-9F9D-A886E65883FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5888FD-EFD7-46E4-B9B7-C12F3DC1BEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5888FD-EFD7-46E4-B9B7-C12F3DC1BEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5888FD-EFD7-46E4-B9B7-C12F3DC1BEFA}.Plugin|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5888FD-EFD7-46E4-B9B7-C12F3DC1BEFA}.Plugin|Any CPU.Build.0 = Debug|Any CPU
+		{EC5888FD-EFD7-46E4-B9B7-C12F3DC1BEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5888FD-EFD7-46E4-B9B7-C12F3DC1BEFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dnd35.Class\Dnd35.Class.csproj" />
+    <ProjectReference Include="..\Nwn2.Class\Nwn2.Class.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CharacterAbilitiesEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CharacterAbilitiesEditor.Designer.cs">
+      <DependentUpon>CharacterAbilitiesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="AlignmentsEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AlignmentsEditor.Designer.cs">
+      <DependentUpon>AlignmentsEditor.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

@@ -204,6 +204,10 @@
     <None Include="Resources\CreateFuulPack.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Dnd35.Class\Dnd35.Class.csproj">
+      <Project>{38d354ec-ce20-486c-8961-8fa55ee60545}</Project>
+      <Name>Dnd35.Class</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NWN2ClassEditorControl\NWN2ClassEditorControl.csproj">
       <Project>{220283A1-544A-4177-B314-0E3A29B97492}</Project>
       <Name>NWN2ClassEditorControl</Name>
